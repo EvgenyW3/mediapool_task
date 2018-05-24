@@ -13,6 +13,10 @@ Tags: mediapool
   justify-content: center;
   flex-wrap: wrap; }
 
+.ball-wrapper {
+  width: 170px;
+  height: 170px; }
+
 .task-block__ball-item {
   cursor: pointer;
   width: 160px;
@@ -25,7 +29,8 @@ Tags: mediapool
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: relative; }
+  position: relative;
+  margin: 0 auto; }
 
 .task-block__ball-item:hover {
   max-width: 160px;
