@@ -1,0 +1,75 @@
+/*
+Theme Name: MediaPool task theme
+Author: Evgeny Oborotistov
+Description: Assigment given by MediaPool team
+Version: 0.0.1
+Tags: mediapool
+*/
+
+.task-block {
+    margin-top: 25vh;
+}
+
+.task-block__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.task-block__ball-item {
+    cursor: pointer;
+    width: 160px;
+    height: 160px;
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 50%;
+    margin: 5px;
+    transition: .5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.task-block__ball-item:hover {
+    max-width: 160px;
+    max-height: 160px;
+}
+
+.task-block__ball-item span {
+    color: #fff;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.task-block__ball-item span:not(.color) {
+    z-index: 10;
+}
+
+.task-block__ball-item span.title {
+    font-size: 24px
+}
+
+.task-block__ball-item span.score {
+    font-size: 36px;
+}
+
+.task-block__ball-item span.color {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.bg-color-red {
+    background: rgb(151, 41, 41);
+}
+
+.bg-color-green {
+    background: rgb(8, 141, 108);
+}
+
+.bg-color-blue {
+    background: rgb(42, 133, 175);
+}
